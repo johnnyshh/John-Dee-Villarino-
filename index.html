@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>John Dee Villarino | Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f8f9fa;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    header {
+      background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+      color: white;
+      padding: 100px 0 80px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3.2rem;
+      margin-bottom: 8px;
+    }
+    header .subtitle {
+      font-size: 1.4rem;
+      opacity: 0.9;
+      font-weight: 300;
+    }
+    section {
+      padding: 70px 0;
+    }
+    h2 {
+      text-align: center;
+      font-size: 2.4rem;
+      margin-bottom: 50px;
+      color: #2c3e50;
+      position: relative;
+    }
+    h2::after {
+      content: '';
+      width: 80px;
+      height: 4px;
+      background: #3498db;
+      position: absolute;
+      bottom: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 2px;
+    }
+    .info-grid {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 40px;
+      align-items: center;
+    }
+    .profile-photo {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 8px solid white;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    }
+    .objective {
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+      margin: 40px auto;
+      max-width: 800px;
+      text-align: center;
+      font-style: italic;
+      font-size: 1.2rem;
+      color: #444;
+    }
+    .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: center;
+    }
+    .skill {
+      background: #3498db;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 30px;
+      font-weight: 500;
+      box-shadow: 0 4px 12px rgba(52, 152, 219, 0.25);
+    }
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+    }
+    .project-card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .project-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    }
+    .project-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .project-content {
+      padding: 25px;
+    }
+    .contact {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+    .contact a {
+      color: #3498db;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .contact a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      background: #222;
+      color: #aaa;
+      text-align: center;
+      padding: 30px;
+      font-size: 0.95rem;
+    }
+    @media (max-width: 768px) {
+      .info-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+      header h1 {
+        font-size: 2.6rem;
+      }
+      h2 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>John Dee Villarino</h1>
+      <p class="subtitle">BS Information Technology • 3rd Year</p>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      
+      <div class="info-grid">
+        <div>
+          <!-- Replace this src with your actual hosted image URL -->
+          <!-- Example: https://i.imgur.com/YourImageID.jpg  or GitHub raw URL -->
+          <img src="C:\Users\Admin\Pictures\me.jpg" alt="John Dee Villarino" class="profile-photo">
+        </div>
+        <div>
+          <h3>Personal Information</h3>
+          <p><strong>Name:</strong> John Dee Villarino</p>
+          <p><strong>Course:</strong> Bachelor of Science in Information Technology</p>
+          <p><strong>Year:</strong> 3rd Year</p>
+          <p><strong>Location:</strong> Cebu City, Philippines</p>
+        </div>
+      </div>
+
+      <div class="objective">
+        "Motivated IT student with a strong foundation in front-end web development. 
+        Passionate about building clean, responsive, and well-structured websites using HTML and CSS, 
+        while practicing version control with Git and GitHub. Eager to apply these skills in real projects, 
+        learn collaboratively, and grow into a reliable web developer."
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" style="background:#f0f4f8;">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-container">
+        <span class="skill">HTML5</span>
+        <span class="skill">CSS3</span>
+        <span class="skill">Git & GitHub</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <!-- <img src="project1.jpg" alt="Project 1" class="project-img"> -->
+          <div class="project-content">
+            <h3>Personal Portfolio Website</h3>
+            <p>A clean, responsive single-page portfolio showcasing my profile, skills, and contact information — built entirely with HTML and CSS.</p>
+            <p><strong>Tech:</strong> HTML5, CSS3, Git & GitHub</p>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <!-- <img src="project2.jpg" alt="Project 2" class="project-img"> -->
+          <div class="project-content">
+            <h3>Simple Landing Page</h3>
+            <p>Modern product/service landing page with hero section, features, and call-to-action button. Fully responsive design.</p>
+            <p><strong>Tech:</strong> HTML5, CSS3 (Flexbox + Grid), Git</p>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <!-- <img src="project3.jpg" alt="Project 3" class="project-img"> -->
+          <div class="project-content">
+            <h3>Photo Gallery Layout</h3>
+            <p>Responsive image gallery with hover effects and CSS grid layout for displaying personal or themed photos.</p>
+            <p><strong>Tech:</strong> HTML5, CSS3 (Grid + Transitions), Git & GitHub</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Get In Touch</h2>
+      <p style="margin: 25px 0; font-size: 1.2rem;">
+        Email: <a href="mailto:villarinojohndee@gmail.com">villarinojohndee@gmail.com</a><br>
+        Phone: 09078560652<br>
+        GitHub: <a href="https://github.com/johnnyshh" target="_blank">github.com/johnnyshh</a>
+      </p>
+      <p style="margin-top: 40px; font-size: 1.1rem;">
+        Open to learning opportunities, small projects, and collaboration using HTML, CSS & Git
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 John Dee Villarino • Made with HTML & CSS</p>
+  </footer>
+
+</body>
+</html>
